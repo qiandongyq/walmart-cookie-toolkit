@@ -1,0 +1,1 @@
+export { FullPageProfileList } from './fullpageProfileList';
