@@ -1,1 +1,3 @@
-export { FullPageProfileList } from './fullpageProfileList';
+export { Profile } from './profile';
+export { EasyCart } from './easyCart';
+export { LocalizePricing } from './localizePricing';

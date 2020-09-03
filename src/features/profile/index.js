@@ -1,9 +1,9 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/core';
-import { ProfileCard } from '../components';
-import { useProfileStore } from '../store';
+import { ProfileCard } from '../../components';
+import { useProfileStore } from '../../store';
 
-export const FullPageProfileList = () => {
+export const Profile = () => {
   const {
     profiles,
     updateProfile,

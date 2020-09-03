@@ -9,9 +9,17 @@ import {
   Collapse,
   PseudoBox,
   Stack,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanel,
+  TabPanels,
+  Divider,
 } from '@chakra-ui/core';
 import { useProfileStore } from '../store';
 import { ActionIcon } from '../components';
+import { features } from '../config';
+
 const Popup = () => {
   const { addToProfile } = useProfileStore();
   const [show, setShow] = React.useState(false);
@@ -72,7 +80,27 @@ const Popup = () => {
           )}
         </Flex>
         <Collapse isOpen={show}>
-          <Box>Settings</Box>
+          <Box my={5}>
+            <Tabs variant="enclosed-colored">
+              <TabList mb="1em">
+                {features.map((f) => (
+                  <Tab
+                    key={f.name}
+                    _selected={{ color: 'white', bg: 'teal.400' }}
+                  >
+                    {f.name}
+                  </Tab>
+                ))}
+              </TabList>
+              <TabPanels mt={5}>
+                {features.map((f) => (
+                  <TabPanel key={f.name}>
+                    <f.component />
+                  </TabPanel>
+                ))}
+              </TabPanels>
+            </Tabs>
+          </Box>
         </Collapse>
       </Box>
     </Box>

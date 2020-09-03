@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid } from '@chakra-ui/core';
 import { CollapseSection, FullpageHeader } from '../components';
-import { FullPageProfileList } from '../features';
+import { Profile } from '../features';
 
 const FullPage = () => {
   return (
@@ -9,14 +9,14 @@ const FullPage = () => {
       <FullpageHeader />
       <Grid gap={10} mt={5} px={5}>
         <CollapseSection title="Profiles">
-          <FullPageProfileList />
+          <Profile />
         </CollapseSection>
-        <CollapseSection title="Qucik Actions">
+        {/* <CollapseSection title="Qucik Actions">
           <Box h={16} borderStyle="dashed" borderWidth="1px"></Box>
         </CollapseSection>
         <CollapseSection title="Utilities">
           <Box h={16} borderStyle="dashed" borderWidth="1px"></Box>
-        </CollapseSection>
+        </CollapseSection> */}
       </Grid>
     </Box>
   );
