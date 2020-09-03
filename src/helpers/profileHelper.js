@@ -3,7 +3,7 @@ import * as tabs from '../utils/tabs';
 import * as storage from '../utils/storage';
 const WALMART_COOKIE_TOOLKIT_PROFILE = 'WALMART_COOKIE_TOOLKIT_PROFILE_ATOM';
 
-export const getLocaStorageProfiles = async () => {
+export const getLocalStorageProfiles = async () => {
   const data = await storage.getSyncStorage(WALMART_COOKIE_TOOLKIT_PROFILE);
   console.log('data', data);
   return data ? data[WALMART_COOKIE_TOOLKIT_PROFILE] : {};
@@ -12,7 +12,7 @@ export const getLocaStorageProfiles = async () => {
 export const addToProfile = async () => {
   const tab = await tabs.getActiveTab();
   const { favIconUrl, title, url } = tab;
-  const existProfiles = await getLocaStorageProfiles();
+  const existProfiles = await getLocalStorageProfiles();
   const hasProfile =
     existProfiles !== undefined && Object.keys(existProfiles).length > 0;
   const newProfile = {
@@ -32,14 +32,14 @@ export const addToProfile = async () => {
 };
 
 export const updateProfile = async (profile) => {
-  const existProfiles = await getLocaStorageProfiles();
+  const existProfiles = await getLocalStorageProfiles();
   existProfiles[profile.id] = profile;
   await storage.setSyncStorage(WALMART_COOKIE_TOOLKIT_PROFILE, existProfiles);
   console.info('updateProfile helper', existProfiles);
 };
 
 export const setDefaultProfile = async (profile) => {
-  const existProfiles = await getLocaStorageProfiles();
+  const existProfiles = await getLocalStorageProfiles();
   console.log('existProfiles', existProfiles);
   for (let key in existProfiles) {
     if (key === profile.id) {
@@ -53,7 +53,7 @@ export const setDefaultProfile = async (profile) => {
 };
 
 export const deleteProfile = async (profile) => {
-  const existProfiles = await getLocaStorageProfiles();
+  const existProfiles = await getLocalStorageProfiles();
   if (
     existProfiles[profile.id].default === true &&
     Object.keys(existProfiles).length !== 0

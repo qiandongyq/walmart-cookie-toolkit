@@ -19,8 +19,52 @@ import { useForm } from 'react-hook-form';
 
 export const EasyCart = () => {
   const { register, handleSubmit } = useForm();
+
+  const updateCartItems = ({
+    postalCode,
+    items,
+    storeId,
+    lang,
+    responseGroup = 'full',
+  }) => {
+    const queryStr = queryString({
+      responseGroup,
+      storeId,
+      lang,
+    });
+    return fetchJSON(`/api/cart-page/cart?${queryStr}`, {
+      method: 'POST',
+      body: JSON.stringify({ postalCode, items }),
+    });
+  };
+  const addItemsToCart = async (items) => {
+    const postalCode = getCookieValue('walmart.shippingPostalCode');
+    const lang = 'en';
+    const storeId = getCookieValue('deliveryCatchment');
+    const items = items.map((item) => ({
+      action: 'ADD',
+      offerId: item.offerId,
+      quantity: 1,
+      skuId: item.skuId,
+    }));
+    // add checked items to cart
+    const res = await updateCartItems({
+      postalCode,
+      items,
+      storeId,
+      lang,
+    });
+
+    console.log(res);
+  };
   const onSubmit = (data) => {
-    console.log(data);
+    item= {
+      offerId: "string",
+      skuId: "string",
+      quantity: "number",
+      action: "ADD",
+      deliveryType?: "GM",
+    }
   };
 
   return (
@@ -45,18 +89,6 @@ export const EasyCart = () => {
               <NumberDecrementStepper />
             </NumberInputStepper>
           </NumberInput>
-        </InputGroup>
-      </Stack>
-      <Stack mt={5}>
-        <InputGroup>
-          <InputLeftAddon children="Sku id" />
-          <Input
-            size="md"
-            defaultValue={0}
-            placeholder="sku id"
-            ref={register}
-            name="skuId"
-          />
         </InputGroup>
       </Stack>
       <Stack mt={5} isInline spacing={4}>

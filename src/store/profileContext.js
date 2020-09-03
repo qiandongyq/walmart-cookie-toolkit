@@ -12,17 +12,19 @@ export const ProfileProvider = ({ children }) => {
 
   React.useEffect(() => {
     const getLocalProfiles = async () => {
-      const localProfiles = await profileHelper.getLocaStorageProfiles();
+      const localProfiles = await profileHelper.getLocalStorageProfiles();
       console.log('localProfiles', localProfiles);
-      updateStore((draft) => {
-        draft.profiles = localProfiles;
-        for (let key in draft.profiles) {
-          if (draft.profiles[key].default === true) {
-            draft.defaultProfile = draft.profiles[key];
-            break;
+      if (localProfiles) {
+        updateStore((draft) => {
+          draft.profiles = localProfiles;
+          for (let key in draft.profiles) {
+            if (draft.profiles[key].default) {
+              draft.defaultProfile = draft.profiles[key];
+              break;
+            }
           }
-        }
-      });
+        });
+      }
     };
     getLocalProfiles();
   }, [updateStore]);
