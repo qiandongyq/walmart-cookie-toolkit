@@ -3,6 +3,8 @@ import { Box, Grid } from '@chakra-ui/core';
 import { CollapseSection, FullpageHeader } from '../components';
 import { Profile } from '../features';
 
+import { EasyCart } from '../features';
+
 const FullPage = () => {
   return (
     <Box w="full" minH="100vh">
@@ -17,6 +19,7 @@ const FullPage = () => {
         <CollapseSection title="Utilities">
           <Box h={16} borderStyle="dashed" borderWidth="1px"></Box>
         </CollapseSection> */}
+        <EasyCart />
       </Grid>
     </Box>
   );

@@ -15,56 +15,50 @@ import {
   Flex,
 } from '@chakra-ui/core';
 
+import axios from 'axios';
+import Cookies from 'js-cookie';
+
 import { useForm } from 'react-hook-form';
+import * as cartHelper from '../../helpers/cartHelper';
 
 export const EasyCart = () => {
   const { register, handleSubmit } = useForm();
 
   const updateCartItems = ({
-    postalCode,
+    postalCode = 'K1C1T1',
     items,
-    storeId,
-    lang,
-    responseGroup = 'full',
+    storeId = '5540',
   }) => {
-    const queryStr = queryString({
-      responseGroup,
-      storeId,
-      lang,
-    });
-    return fetchJSON(`/api/cart-page/cart?${queryStr}`, {
-      method: 'POST',
-      body: JSON.stringify({ postalCode, items }),
-    });
+    axios.post(
+      `https://www-qa2.walmart.ca/api/cart-page/cart?responseGroup=full&storeId=${storeId}&lang=en`,
+      {
+        postalCode,
+        items,
+      }
+    );
   };
-  const addItemsToCart = async (items) => {
-    const postalCode = getCookieValue('walmart.shippingPostalCode');
-    const lang = 'en';
-    const storeId = getCookieValue('deliveryCatchment');
-    const items = items.map((item) => ({
-      action: 'ADD',
-      offerId: item.offerId,
-      quantity: 1,
-      skuId: item.skuId,
-    }));
-    // add checked items to cart
-    const res = await updateCartItems({
-      postalCode,
-      items,
-      storeId,
-      lang,
-    });
 
-    console.log(res);
-  };
-  const onSubmit = (data) => {
-    item= {
-      offerId: "string",
-      skuId: "string",
-      quantity: "number",
-      action: "ADD",
-      deliveryType?: "GM",
+  const addItemsToCart = async (items) => {
+    const postalCode = Cookies.get('walmart.shippingPostalCode');
+    const storeId = Cookies.get('deliveryCatchment');
+
+    // call api
+    try {
+      const res = await updateCartItems({
+        postalCode,
+        items,
+        storeId,
+      });
+
+      console.log(res);
+    } catch (err) {
+      console.log(err);
     }
+  };
+  const onSubmit = async (values) => {
+    const items = cartHelper.getItems(values);
+    console.log(items);
+    await addItemsToCart(items);
   };
 
   return (
