@@ -14,22 +14,57 @@ import {
   Radio,
   RadioGroup,
   Heading,
+  Tooltip,
+  useToast,
 } from '@chakra-ui/core';
 
 import { useForm } from 'react-hook-form';
 import * as cartHelper from '../../helpers/cartHelper';
 
 export const EasyCart = () => {
-  const { register, handleSubmit, formState, reset, getValues } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm();
   const [env, setEnv] = React.useState('QA');
+  const toast = useToast();
 
   const onSubmit = async (values) => {
     const items = cartHelper.getItems(values);
-    await cartHelper.addItemsToCart(items, env);
+    if (items.length !== 0) {
+      try {
+        await cartHelper.addItemsToCart(items, env);
+        toast({
+          title: `Success`,
+          description: `${items.length} items be added`,
+          status: 'success',
+          duration: 2000,
+          isClosable: true,
+          position: 'bottom-left',
+        });
+      } catch (e) {
+        toast({
+          title: `An error occurred.`,
+          description: `Unable to add items`,
+          status: 'error',
+          duration: 2000,
+          isClosable: true,
+          position: 'bottom-left',
+        });
+      }
+    } else {
+      toast({
+        title: `Warning`,
+        description: `Nothing to add!`,
+        status: 'warning',
+        duration: 2000,
+        isClosable: true,
+        position: 'bottom-left',
+      });
+    }
+
     reset();
   };
+
   const { isSubmitting } = formState;
-  console.log(getValues('gmCount'));
+
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Stack isInline my={5} spacing={4}>
@@ -73,7 +108,14 @@ export const EasyCart = () => {
             p={3}
           >
             <InputGroup maxW="50%">
-              <InputLeftAddon children="Ct" />
+              <InputLeftAddon
+                children={
+                  <Tooltip label="GM Items" placement="top">
+                    Ct
+                  </Tooltip>
+                }
+              />
+
               <NumberInput defaultValue={0} min={0} max={5}>
                 <NumberInputField name="gmCount" ref={register} />
                 <NumberInputStepper>
@@ -83,8 +125,18 @@ export const EasyCart = () => {
               </NumberInput>
             </InputGroup>
             <InputGroup maxW="50%">
-              <InputLeftAddon children="$ >=" color="teal.200" />
-              <NumberInput defaultValue={50} min={0}>
+              <InputLeftAddon
+                children={
+                  <Tooltip
+                    label="Minimium Price (Apply to all GM filters)"
+                    placement="top"
+                  >
+                    {'$ >='}
+                  </Tooltip>
+                }
+                color="teal.200"
+              />
+              <NumberInput defaultValue={0} min={0}>
                 <NumberInputField name="gmPrice" ref={register} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
@@ -93,28 +145,76 @@ export const EasyCart = () => {
               </NumberInput>
             </InputGroup>
           </Stack>
-          <Stack isInline mt={3} spacing={4}>
-            <InputGroup maxW="50%" borderStyle="dashed" borderWidth="1px" p={3}>
-              <InputLeftAddon children="LS" />
-              <NumberInput defaultValue={0} min={0} max={5}>
-                <NumberInputField name="gmLsCount" ref={register} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
-            </InputGroup>
-            <InputGroup maxW="50%" borderStyle="dashed" borderWidth="1px" p={3}>
-              <InputLeftAddon children="OS" />
-              <NumberInput defaultValue={0} min={0} max={5}>
-                <NumberInputField name="gmOsCount" ref={register} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
-            </InputGroup>
-          </Stack>
+          <Box mt={3} borderStyle="dashed" borderWidth="1px" p={3}>
+            <Stack isInline spacing={4}>
+              <InputGroup maxW="50%">
+                <InputLeftAddon
+                  children={
+                    <Tooltip label="Limites Stock" placement="top">
+                      LS
+                    </Tooltip>
+                  }
+                />
+                <NumberInput defaultValue={0} min={0} max={5}>
+                  <NumberInputField name="gmLsCount" ref={register} />
+                  <NumberInputStepper>
+                    <NumberIncrementStepper />
+                    <NumberDecrementStepper />
+                  </NumberInputStepper>
+                </NumberInput>
+              </InputGroup>
+              <InputGroup maxW="50%">
+                <InputLeftAddon
+                  children={
+                    <Tooltip label="Out of Stock" placement="top">
+                      OS
+                    </Tooltip>
+                  }
+                />
+                <NumberInput defaultValue={0} min={0} max={5}>
+                  <NumberInputField name="gmOsCount" ref={register} />
+                  <NumberInputStepper>
+                    <NumberIncrementStepper />
+                    <NumberDecrementStepper />
+                  </NumberInputStepper>
+                </NumberInput>
+              </InputGroup>
+            </Stack>
+            <Stack isInline mt={3} spacing={4}>
+              <InputGroup maxW="50%">
+                <InputLeftAddon
+                  children={
+                    <Tooltip label="  3P Items" placement="top">
+                      3P
+                    </Tooltip>
+                  }
+                />
+                <NumberInput defaultValue={0} min={0} max={5}>
+                  <NumberInputField name="gm3pCount" ref={register} />
+                  <NumberInputStepper>
+                    <NumberIncrementStepper />
+                    <NumberDecrementStepper />
+                  </NumberInputStepper>
+                </NumberInput>
+              </InputGroup>
+              <InputGroup maxW="50%">
+                <InputLeftAddon
+                  children={
+                    <Tooltip label="Digital Items" placement="top">
+                      DT
+                    </Tooltip>
+                  }
+                />
+                <NumberInput defaultValue={0} min={0} max={5}>
+                  <NumberInputField name="gmDigitalCount" ref={register} />
+                  <NumberInputStepper>
+                    <NumberIncrementStepper />
+                    <NumberDecrementStepper />
+                  </NumberInputStepper>
+                </NumberInput>
+              </InputGroup>
+            </Stack>
+          </Box>
         </Box>
       </Box>
       <Box spacing={4} mt={5}>
@@ -130,7 +230,13 @@ export const EasyCart = () => {
           p={3}
         >
           <InputGroup maxW="50%">
-            <InputLeftAddon children="Ct" />
+            <InputLeftAddon
+              children={
+                <Tooltip label=" Grocery Items" placement="top">
+                  Go
+                </Tooltip>
+              }
+            />
             <NumberInput defaultValue={0} min={0} max={5}>
               <NumberInputField name="goCount" ref={register} />
               <NumberInputStepper>
@@ -140,31 +246,19 @@ export const EasyCart = () => {
             </NumberInput>
           </InputGroup>
           <InputGroup maxW="50%">
-            <InputLeftAddon children="$ >=" />
+            <InputLeftAddon
+              children={
+                <Tooltip
+                  label="Minimum Price (Apply to all GO filters)"
+                  placement="top"
+                >
+                  {'$ >='}
+                </Tooltip>
+              }
+              color="teal.200"
+            />
             <NumberInput defaultValue={0} min={0} max={50}>
               <NumberInputField name="goPrice" ref={register} />
-              <NumberInputStepper>
-                <NumberIncrementStepper />
-                <NumberDecrementStepper />
-              </NumberInputStepper>
-            </NumberInput>
-          </InputGroup>
-        </Stack>
-        <Stack isInline mt={3} spacing={4}>
-          <InputGroup maxW="50%" borderStyle="dashed" borderWidth="1px" p={3}>
-            <InputLeftAddon children="LS" />
-            <NumberInput defaultValue={0} min={0} max={5}>
-              <NumberInputField name="goLsCount" ref={register} />
-              <NumberInputStepper>
-                <NumberIncrementStepper />
-                <NumberDecrementStepper />
-              </NumberInputStepper>
-            </NumberInput>
-          </InputGroup>
-          <InputGroup maxW="50%" borderStyle="dashed" borderWidth="1px" p={3}>
-            <InputLeftAddon children="OS" />
-            <NumberInput defaultValue={0} min={0} max={5}>
-              <NumberInputField name="goOsCount" ref={register} />
               <NumberInputStepper>
                 <NumberIncrementStepper />
                 <NumberDecrementStepper />

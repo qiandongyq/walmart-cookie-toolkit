@@ -7,14 +7,13 @@ export const LocalizePricing = () => {
 
   React.useEffect(() => {
     const localStoreInfo = lpHelper.decodeLocalStoreInfoCookie();
-    console.log('localStoreInfo');
     setLocalStoreCookie(localStoreInfo);
   }, []);
 
   return Object.keys(localStoreCookie).length === 0 ? (
     <Box py={5}>
       <Heading as="h3" size="sm">
-        No LocalStoreInfo Cookie Found!
+        Coming Soon!
       </Heading>
     </Box>
   ) : (

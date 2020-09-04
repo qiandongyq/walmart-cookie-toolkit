@@ -8,11 +8,11 @@ const STG_API_BASE_URL = 'https://www-qa3.walmart.ca/api/cart-page';
 export const getItems = (values) => {
   let skuItems = [];
   let gmItems = [];
+  let gm3pItems = [];
+  let gmDigitalItems = [];
   let gmOsItems = [];
   let gmLsItems = [];
   let goItems = [];
-  let goOsItems = [];
-  let goLsItems = [];
 
   //Sku id
   if (values.skuId) {
@@ -25,12 +25,45 @@ export const getItems = (values) => {
       .filter(
         (item) =>
           item.ITEM_TYPE === 'GM' &&
+          item.OFFERTYPE === '1P' &&
+          !item.ISDIGITAL &&
           item.LIMITEDSTOCKAVAILABLE === 'NO' &&
           item.INVENTORY !== 0 &&
           item.PRICE >= Number(values.gmPrice)
       )
       .slice(0, Number(values.gmCount));
   }
+
+  // GM 3p items
+  if (values.gm3pCount !== '0') {
+    gm3pItems = goldenData
+      .filter(
+        (item) =>
+          item.ITEM_TYPE === 'GM' &&
+          item.OFFERTYPE === '3P' &&
+          !item.ISDIGITAL &&
+          item.LIMITEDSTOCKAVAILABLE === 'NO' &&
+          item.INVENTORY !== 0 &&
+          item.PRICE >= Number(values.gmPrice)
+      )
+      .slice(0, Number(values.gm3pCount));
+  }
+
+  // GM digital items
+  if (values.gmDigitalCount !== '0') {
+    gmDigitalItems = goldenData
+      .filter(
+        (item) =>
+          item.ITEM_TYPE === 'GM' &&
+          item.OFFERTYPE === '1P' &&
+          item.ISDIGITAL &&
+          item.LIMITEDSTOCKAVAILABLE === 'NO' &&
+          item.INVENTORY !== 0 &&
+          item.PRICE >= Number(values.gmPrice)
+      )
+      .slice(0, Number(values.gmDigitalCount));
+  }
+
   //GM LS items
   if (values.gmLsCount !== '0') {
     gmLsItems = goldenData
@@ -46,6 +79,7 @@ export const getItems = (values) => {
       .filter((item) => item.ITEM_TYPE === 'GM' && item.INVENTORY === 0)
       .slice(0, Number(values.gmOsCount));
   }
+
   // GO items
   if (values.goCount !== '0') {
     goItems = goldenData
@@ -56,32 +90,17 @@ export const getItems = (values) => {
           item.INVENTORY !== 0 &&
           item.PRICE >= Number(values.goPrice)
       )
-      .slice(0, Number(values.gmCount));
-  }
-  // GO LS items
-  if (values.goLsCount !== '0') {
-    goLsItems = goldenData
-      .filter(
-        (item) =>
-          item.ITEM_TYPE === 'GO' && item.LIMITEDSTOCKAVAILABLE === 'YES'
-      )
-      .slice(0, Number(values.goLsCount));
-  }
-  // GO OOS items
-  if (values.goOsItems !== '0') {
-    goOsItems = goldenData
-      .filter((item) => item.ITEM_TYPE === 'GM' && item.INVENTORY === 0)
-      .slice(0, Number(values.goOsItems));
+      .slice(0, Number(values.goCount));
   }
 
   return [
     ...skuItems,
     ...gmItems,
+    ...gm3pItems,
+    ...gmDigitalItems,
     ...gmLsItems,
     ...gmOsItems,
     ...goItems,
-    ...goLsItems,
-    ...goOsItems,
   ].map((item) => ({
     offerId: item.OFFERID.toString(),
     skuId: item.SKU.toString(),
@@ -90,31 +109,29 @@ export const getItems = (values) => {
   }));
 };
 
-const updateCartItems = ({
+const updateCartItems = async ({
   postalCode = 'K1C1T1',
   items,
   storeId = '5540',
   env = QA_API_BASE_URL,
 }) => {
   const apiUrl = env === 'QA' ? QA_API_BASE_URL : STG_API_BASE_URL;
-  console.log(apiUrl);
-  axios.post(`${apiUrl}/cart?responseGroup=full&storeId=${storeId}&lang=en`, {
-    postalCode,
-    items,
-  });
+  await axios.post(
+    `${apiUrl}/cart?responseGroup=full&storeId=${storeId}&lang=en`,
+    {
+      postalCode,
+      items,
+    }
+  );
 };
 
 export const addItemsToCart = async (items, env) => {
   const postalCode = Cookies.get('walmart.shippingPostalCode');
   const storeId = Cookies.get('deliveryCatchment');
-  try {
-    await updateCartItems({
-      postalCode,
-      items,
-      storeId,
-      env,
-    });
-  } catch (err) {
-    console.log(err);
-  }
+  await updateCartItems({
+    postalCode,
+    items,
+    storeId,
+    env,
+  });
 };
