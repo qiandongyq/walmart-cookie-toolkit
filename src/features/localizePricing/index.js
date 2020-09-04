@@ -13,7 +13,7 @@ export const LocalizePricing = () => {
   return Object.keys(localStoreCookie).length === 0 ? (
     <Box py={5}>
       <Heading as="h3" size="sm">
-        Coming Soon!
+        localStoreInfo cookie not exist
       </Heading>
     </Box>
   ) : (

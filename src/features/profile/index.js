@@ -8,7 +8,7 @@ export const Profile = () => {
     profiles,
     updateProfile,
     setDefaultProfile,
-    deleteProfile,
+    deleteProfile
   } = useProfileStore();
   return (
     <Flex flexWrap="wrap">

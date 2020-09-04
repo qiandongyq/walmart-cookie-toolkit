@@ -6,7 +6,7 @@ import {
   TabList,
   Tab,
   TabPanel,
-  TabPanels,
+  TabPanels
 } from '@chakra-ui/core';
 import { ActionIcon } from '../components';
 import { features } from '../config';

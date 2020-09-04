@@ -12,7 +12,7 @@ export const FullpageHeader = () => {
       boxShadow="lg"
       position="relative"
     >
-      <Heading as="h1">Walmart Cookie Toolkit </Heading>
+      <Heading as="h1">Walmart Dev Toolkit </Heading>
       <Box position="absolute" right={10}>
         {colorMode === 'light' ? (
           <IconButton

@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import * as tabs from '../utils/tabs';
+import * as cookieHelper from '../helpers/cookieHelper';
 import * as storage from '../utils/storage';
 const WALMART_COOKIE_TOOLKIT_PROFILE = 'WALMART_COOKIE_TOOLKIT_PROFILE_ATOM';
 
@@ -10,7 +10,7 @@ export const getLocalStorageProfiles = async () => {
 };
 
 export const addToProfile = async () => {
-  const tab = await tabs.getActiveTab();
+  const tab = await cookieHelper.getActiveTab();
   console.log('tab', tab);
   const { favIconUrl, title, url } = tab;
   const existProfiles = await getLocalStorageProfiles();
@@ -21,7 +21,7 @@ export const addToProfile = async () => {
     favIconUrl,
     title: title.length > 35 ? title.slice(0, 35) : title,
     url,
-    default: hasProfile ? false : true,
+    default: hasProfile ? false : true
   };
   let updatedProfiles = hasProfile
     ? { ...existProfiles, [newProfile.id]: newProfile }

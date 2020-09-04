@@ -100,12 +100,12 @@ export const getItems = (values) => {
     ...gmDigitalItems,
     ...gmLsItems,
     ...gmOsItems,
-    ...goItems,
+    ...goItems
   ].map((item) => ({
     offerId: item.OFFERID.toString(),
     skuId: item.SKU.toString(),
     quantity: 1,
-    action: 'ADD',
+    action: 'ADD'
   }));
 };
 
@@ -113,14 +113,14 @@ const updateCartItems = async ({
   postalCode = 'K1C1T1',
   items,
   storeId = '5540',
-  env = QA_API_BASE_URL,
+  env = QA_API_BASE_URL
 }) => {
   const apiUrl = env === 'QA' ? QA_API_BASE_URL : STG_API_BASE_URL;
   await axios.post(
     `${apiUrl}/cart?responseGroup=full&storeId=${storeId}&lang=en`,
     {
       postalCode,
-      items,
+      items
     }
   );
 };
@@ -132,6 +132,6 @@ export const addItemsToCart = async (items, env) => {
     postalCode,
     items,
     storeId,
-    env,
+    env
   });
 };

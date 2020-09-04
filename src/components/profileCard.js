@@ -8,7 +8,7 @@ import {
   Text,
   Editable,
   EditableInput,
-  EditablePreview,
+  EditablePreview
 } from '@chakra-ui/core';
 import { ActionIcon } from './actionIcon';
 
@@ -20,7 +20,7 @@ export const ProfileCard = ({
   profile,
   updateProfile,
   deleteProfile,
-  setDefaultProfile,
+  setDefaultProfile
 }) => {
   const [showAction, setShowAction] = React.useState(false);
   const { colorMode } = useColorMode();

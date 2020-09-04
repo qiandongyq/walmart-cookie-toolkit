@@ -35,7 +35,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 10043165,
@@ -73,7 +73,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151472,
@@ -111,7 +111,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151390,
@@ -149,7 +149,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10150779,
@@ -187,7 +187,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151054,
@@ -225,7 +225,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151543,
@@ -263,7 +263,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206498,
@@ -301,7 +301,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10192991,
@@ -339,7 +339,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196610272,
@@ -377,7 +377,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 10139430,
@@ -415,7 +415,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 134455,
@@ -453,7 +453,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196422586,
@@ -491,7 +491,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10274265,
@@ -529,7 +529,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 875806,
@@ -567,7 +567,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10317277,
@@ -605,7 +605,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10243879,
@@ -643,7 +643,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 131761,
@@ -681,7 +681,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10068572,
@@ -719,7 +719,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10044284,
@@ -757,7 +757,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10242997,
@@ -795,7 +795,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10043319,
@@ -833,7 +833,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192911549,
@@ -871,7 +871,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193375243,
@@ -909,7 +909,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10024546,
@@ -947,7 +947,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10137600,
@@ -985,7 +985,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188764412,
@@ -1023,7 +1023,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188959796,
@@ -1061,7 +1061,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000189678404,
@@ -1099,7 +1099,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10136598,
@@ -1137,7 +1137,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10301172,
@@ -1175,7 +1175,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '2YNFOHL1DJVM',
@@ -1213,7 +1213,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '0VDSF35UY81C',
@@ -1251,7 +1251,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '2PTG0W5SSM2G',
@@ -1289,7 +1289,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '4W8QITLKZC05',
@@ -1327,7 +1327,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '4EULCXTRBKX3',
@@ -1365,7 +1365,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '5YKKQC963JGL',
@@ -1403,7 +1403,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '6E2EQAJ1181Z',
@@ -1441,7 +1441,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '6FOHYDU5I7VK',
@@ -1479,7 +1479,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '55HBGH3QO8J5',
@@ -1517,7 +1517,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '4UMZ7YCKOBKH',
@@ -1555,7 +1555,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '12TFR3V491TS',
@@ -1593,7 +1593,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '6UM7NEMKZHUP',
@@ -1631,7 +1631,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '6M86HNGXZCIU',
@@ -1669,7 +1669,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196130412,
@@ -1707,7 +1707,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10206759,
@@ -1745,7 +1745,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10263353,
@@ -1783,7 +1783,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195026861,
@@ -1821,7 +1821,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197597139,
@@ -1859,7 +1859,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196011550,
@@ -1897,7 +1897,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 205815,
@@ -1935,7 +1935,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193258790,
@@ -1973,7 +1973,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196601086,
@@ -2011,7 +2011,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193456989,
@@ -2049,7 +2049,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188960179,
@@ -2087,7 +2087,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 127191,
@@ -2125,7 +2125,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193213530,
@@ -2163,7 +2163,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10155687,
@@ -2201,7 +2201,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10031526,
@@ -2239,7 +2239,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195441803,
@@ -2277,7 +2277,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195441809,
@@ -2315,7 +2315,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195441812,
@@ -2353,7 +2353,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10150841,
@@ -2391,7 +2391,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151151,
@@ -2429,7 +2429,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10151485,
@@ -2467,7 +2467,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196046005,
@@ -2505,7 +2505,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10032648,
@@ -2543,7 +2543,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191270293,
@@ -2581,7 +2581,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193606661,
@@ -2619,7 +2619,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10243782,
@@ -2657,7 +2657,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196200479,
@@ -2695,7 +2695,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196200482,
@@ -2733,7 +2733,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196200476,
@@ -2771,7 +2771,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197626311,
@@ -2809,7 +2809,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000198661726,
@@ -2847,7 +2847,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206362,
@@ -2885,7 +2885,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'AutoSave',
+    V2_BADGE_INFO: 'AutoSave'
   },
   {
     SKU: 6000195423685,
@@ -2923,7 +2923,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197249469,
@@ -2961,7 +2961,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197249466,
@@ -2999,7 +2999,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197249460,
@@ -3037,7 +3037,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10062050,
@@ -3075,7 +3075,7 @@ export default [
     VARIANTS: 2,
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '6LX6PFHZ5SWW',
@@ -3113,7 +3113,7 @@ export default [
     VARIANTS: 3,
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '62KVR2A2BM5C',
@@ -3151,7 +3151,7 @@ export default [
     VARIANTS: 1,
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: '58H5RBAFP4PV',
@@ -3189,7 +3189,7 @@ export default [
     VARIANTS: 1,
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196141975,
@@ -3227,7 +3227,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Clearance',
+    V2_BADGE_INFO: 'Clearance'
   },
   {
     SKU: 6000198102061,
@@ -3265,7 +3265,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196927782,
@@ -3303,7 +3303,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 6000197240154,
@@ -3341,7 +3341,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Clearance',
+    V2_BADGE_INFO: 'Clearance'
   },
   {
     SKU: 6000197240176,
@@ -3379,7 +3379,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197549317,
@@ -3417,7 +3417,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197397874,
@@ -3455,7 +3455,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10031124,
@@ -3493,7 +3493,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10031905,
@@ -3531,7 +3531,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10032890,
@@ -3569,7 +3569,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10057407,
@@ -3607,7 +3607,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10064838,
@@ -3645,7 +3645,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10072667,
@@ -3683,7 +3683,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10147762,
@@ -3721,7 +3721,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10156200,
@@ -3759,7 +3759,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10164376,
@@ -3797,7 +3797,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10183862,
@@ -3835,7 +3835,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10184534,
@@ -3873,7 +3873,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10185809,
@@ -3911,7 +3911,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10215579,
@@ -3949,7 +3949,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10218495,
@@ -3987,7 +3987,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10243733,
@@ -4025,7 +4025,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10275066,
@@ -4063,7 +4063,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10277505,
@@ -4101,7 +4101,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10280640,
@@ -4139,7 +4139,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10292200,
@@ -4177,7 +4177,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10311504,
@@ -4215,7 +4215,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10313753,
@@ -4253,7 +4253,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10326113,
@@ -4291,7 +4291,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 205588,
@@ -4329,7 +4329,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206753,
@@ -4367,7 +4367,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206873,
@@ -4405,7 +4405,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 207439,
@@ -4443,7 +4443,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187156980,
@@ -4481,7 +4481,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187157175,
@@ -4519,7 +4519,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188741863,
@@ -4557,7 +4557,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188743469,
@@ -4595,7 +4595,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000188986301,
@@ -4633,7 +4633,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000189294524,
@@ -4671,7 +4671,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191268597,
@@ -4709,7 +4709,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191268947,
@@ -4747,7 +4747,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191270121,
@@ -4785,7 +4785,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191270576,
@@ -4823,7 +4823,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191275801,
@@ -4861,7 +4861,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192034936,
@@ -4899,7 +4899,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192229765,
@@ -4937,7 +4937,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 6000192504379,
@@ -4975,7 +4975,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192504382,
@@ -5013,7 +5013,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192504385,
@@ -5051,7 +5051,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193176364,
@@ -5089,7 +5089,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000194034102,
@@ -5127,7 +5127,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000194056998,
@@ -5165,7 +5165,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195089802,
@@ -5203,7 +5203,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195508237,
@@ -5241,7 +5241,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195940453,
@@ -5279,7 +5279,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195944829,
@@ -5317,7 +5317,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196360145,
@@ -5355,7 +5355,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196711711,
@@ -5393,7 +5393,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196800936,
@@ -5431,7 +5431,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196823287,
@@ -5469,7 +5469,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197111438,
@@ -5507,7 +5507,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197843895,
@@ -5545,7 +5545,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187488400,
@@ -5583,7 +5583,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: true,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197405706,
@@ -5621,7 +5621,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196157598,
@@ -5659,7 +5659,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10036328,
@@ -5697,7 +5697,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10049614,
@@ -5735,7 +5735,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 132794,
@@ -5773,7 +5773,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: true,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10168993,
@@ -5811,7 +5811,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000198099504,
@@ -5849,7 +5849,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000198014032,
@@ -5887,7 +5887,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10029059,
@@ -5925,7 +5925,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206667,
@@ -5963,7 +5963,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10137289,
@@ -6001,7 +6001,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192236646,
@@ -6039,7 +6039,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191268789,
@@ -6077,7 +6077,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196383043,
@@ -6115,7 +6115,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196361186,
@@ -6153,7 +6153,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 206807,
@@ -6191,7 +6191,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196169038,
@@ -6229,7 +6229,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187042152,
@@ -6267,7 +6267,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 6000197118654,
@@ -6305,7 +6305,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000196457457,
@@ -6343,7 +6343,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197455314,
@@ -6381,7 +6381,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10179414,
@@ -6419,7 +6419,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 6000187027360,
@@ -6457,7 +6457,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000193605439,
@@ -6495,7 +6495,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 10180223,
@@ -6533,7 +6533,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000197929991,
@@ -6571,7 +6571,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000191275727,
@@ -6609,7 +6609,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
+    V2_BADGE_INFO: 'Rollback'
   },
   {
     SKU: 6000196382940,
@@ -6647,7 +6647,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 10211637,
@@ -6685,7 +6685,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000192235452,
@@ -6723,7 +6723,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187338050,
@@ -6761,7 +6761,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187106560,
@@ -6799,7 +6799,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000189067669,
@@ -6837,7 +6837,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000187084390,
@@ -6875,7 +6875,7 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: '',
+    V2_BADGE_INFO: ''
   },
   {
     SKU: 6000195497764,
@@ -6913,6 +6913,6 @@ export default [
     VARIANTS: '',
     HIDEPRICE: false,
     ISCHARITY: false,
-    V2_BADGE_INFO: 'Rollback',
-  },
+    V2_BADGE_INFO: 'Rollback'
+  }
 ];

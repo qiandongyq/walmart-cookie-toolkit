@@ -7,7 +7,7 @@ const ProfileContext = React.createContext();
 export const ProfileProvider = ({ children }) => {
   const [store, updateStore] = useImmer({
     profiles: {},
-    defaultProfile: {},
+    defaultProfile: {}
   });
 
   React.useEffect(() => {
@@ -37,6 +37,7 @@ export const ProfileProvider = ({ children }) => {
         draft.profiles[newProfile.id].default = true;
       }
     });
+    return newProfile;
   };
 
   const updateProfile = async (profile) => {
@@ -80,7 +81,7 @@ export const ProfileProvider = ({ children }) => {
         addToProfile,
         updateProfile,
         setDefaultProfile,
-        deleteProfile,
+        deleteProfile
       }}
     >
       {children}
