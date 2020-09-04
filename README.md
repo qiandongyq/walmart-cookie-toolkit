@@ -1,1 +1,1 @@
-# Walmart Cookie Toolkit
+# Walmart Dev Toolkit

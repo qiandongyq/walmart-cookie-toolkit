@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Walmart cookie toolkit",
-  "description": "Walmart cookie toolkit",
+  "name": "Walmart dev toolkit",
+  "description": "Chrome extension to help walmart devs",
   "version": "1.0.0",
   "icons": {
     "128": "icon.png"
@@ -17,5 +17,5 @@
     "persistent": false,
     "scripts": ["background.js"]
   },
-  "permissions": ["storage", "<all_urls>"]
+  "permissions": ["storage", "<all_urls>", "cookies", "tabs"]
 }
