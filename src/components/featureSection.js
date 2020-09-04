@@ -13,18 +13,16 @@ import { features } from '../config';
 
 export const FeatureSection = () => {
   const [show, setShow] = React.useState(false);
+  const handleToggle = () => setShow((prev) => !prev);
+
   return (
     <Box>
       <Flex mt="5" mb="3" justify="center" cursor="pointer">
         {show ? (
-          <ActionIcon
-            action={() => setShow(!show)}
-            iconName="chevron-up"
-            size="20px"
-          />
+          <ActionIcon action={handleToggle} iconName="chevron-up" size="20px" />
         ) : (
           <ActionIcon
-            action={() => setShow(!show)}
+            action={handleToggle}
             iconName="chevron-down"
             size="20px"
           />

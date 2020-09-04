@@ -3,7 +3,7 @@ import { Box, Heading, Flex, Icon, Collapse } from '@chakra-ui/core';
 
 export const CollapseSection = ({ title, children }) => {
   const [show, setShow] = React.useState(true);
-  const handleToggle = () => setShow(!show);
+  const handleToggle = () => setShow((prev) => !prev);
   return (
     <Box>
       <Flex alignItems="center">

@@ -64,6 +64,7 @@ export const EasyCart = () => {
   };
 
   const { isSubmitting } = formState;
+  const handleEnvChange = (e) => setEnv(e.target.value);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -72,7 +73,7 @@ export const EasyCart = () => {
           isInline
           spacing={5}
           defaultValue="QA"
-          onChange={(e) => setEnv(e.target.value)}
+          onChange={handleEnvChange}
           value={env}
         >
           <Radio value="QA" variantColor="teal" size="md">
