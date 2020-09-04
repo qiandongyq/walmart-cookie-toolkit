@@ -1,21 +1,5 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Flex,
-  Icon,
-  Divider,
-  useColorMode,
-  Collapse,
-  IconButton,
-  Image,
-  Stack,
-  Text,
-  Grid,
-  Editable,
-  EditableInput,
-  EditablePreview,
-} from '@chakra-ui/core';
+import { Box, Heading, Flex, useColorMode, IconButton } from '@chakra-ui/core';
 
 export const FullpageHeader = () => {
   const { colorMode, toggleColorMode } = useColorMode();

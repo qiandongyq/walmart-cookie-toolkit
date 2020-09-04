@@ -11,6 +11,7 @@ export const getLocalStorageProfiles = async () => {
 
 export const addToProfile = async () => {
   const tab = await tabs.getActiveTab();
+  console.log('tab', tab);
   const { favIconUrl, title, url } = tab;
   const existProfiles = await getLocalStorageProfiles();
   const hasProfile =

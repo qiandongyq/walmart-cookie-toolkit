@@ -1,22 +1,14 @@
 import React from 'react';
 import {
   Box,
-  Heading,
   Flex,
-  Icon,
-  Divider,
   useColorMode,
-  Collapse,
-  IconButton,
   Image,
   Stack,
   Text,
-  Grid,
   Editable,
   EditableInput,
   EditablePreview,
-  PseudoBox,
-  Tooltip,
 } from '@chakra-ui/core';
 import { ActionIcon } from './actionIcon';
 
