@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from '@chakra-ui/core';
 import { CollapseSection, FullpageHeader } from '../components';
 import { Profile } from '../features';
-import { EasyCart, LocalizePricing } from '../features';
+// import { EasyCart, LocalizePricing } from '../features';
 
 const FullPage = () => {
   return (
@@ -12,8 +12,8 @@ const FullPage = () => {
         <CollapseSection title="Profiles">
           <Profile />
         </CollapseSection>
-        <EasyCart />
-        <LocalizePricing />
+        {/* <EasyCart />
+        <LocalizePricing /> */}
       </Grid>
     </Box>
   );
