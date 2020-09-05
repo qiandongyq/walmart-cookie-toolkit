@@ -62,7 +62,7 @@ export const GDSSearch = ({ onSelect }) => {
         </InputLeftAddon>
         <Input
           type="text"
-          placeholder="61499392212"
+          placeholder="61499392212 or gm or 3p"
           value={searchInputValue || searchItem.SKU || ''}
           onChange={handleSearch}
         />

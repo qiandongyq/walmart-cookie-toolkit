@@ -6,7 +6,11 @@ import {
   Radio,
   RadioGroup,
   Heading,
-  useToast
+  useToast,
+  Switch,
+  Flex,
+  FormLabel,
+  Tooltip
 } from '@chakra-ui/core';
 import { useForm } from 'react-hook-form';
 import * as cartHelper from '../../helpers/cartHelper';
@@ -71,22 +75,34 @@ export const EasyCart = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Stack isInline my={5} spacing={4}>
-        <RadioGroup
-          isInline
-          spacing={5}
-          defaultValue={env}
-          onChange={handleEnvChange}
-          value={env}
-        >
-          <Radio value="QA" variantColor="teal" size="md">
-            QA
-          </Radio>
-          <Radio value="STG" variantColor="teal" size="md">
-            STG
-          </Radio>
-        </RadioGroup>
-      </Stack>
+      <Flex justify="space-between" align="center">
+        <Stack isInline my={3} spacing={4}>
+          <RadioGroup
+            isInline
+            spacing={5}
+            defaultValue={env}
+            onChange={handleEnvChange}
+            value={env}
+          >
+            <Radio value="QA" variantColor="teal" size="md">
+              QA
+            </Radio>
+            <Radio value="STG" variantColor="teal" size="md">
+              STG
+            </Radio>
+          </RadioGroup>
+        </Stack>
+        <Flex alignItems="center">
+          <Tooltip
+            label="Auto add the first available slot (WIP) 😝"
+            placement="top"
+            zIndex={2}
+          >
+            <FormLabel htmlFor="slot">Slot</FormLabel>
+          </Tooltip>
+          <Switch color="teal" mr={2} />
+        </Flex>
+      </Flex>
       <GDSSearch onSelect={handleOnSearchSelect} />
       <Box spacing={4} mt={5}>
         <Heading as="h3" size="sm" color="teal.200">

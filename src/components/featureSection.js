@@ -17,7 +17,7 @@ export const FeatureSection = () => {
 
   return (
     <Box>
-      <Flex mt="5" mb="3" justify="center" cursor="pointer">
+      <Flex mt="5" mb="3" wrap="wrap" justify="center" cursor="pointer">
         {show ? (
           <ActionIcon action={handleToggle} iconName="chevron-up" size="20px" />
         ) : (
