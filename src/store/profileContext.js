@@ -13,7 +13,6 @@ export const ProfileProvider = ({ children }) => {
   React.useEffect(() => {
     const getLocalProfiles = async () => {
       const localProfiles = await profileHelper.getLocalStorageProfiles();
-      console.log('localProfiles', localProfiles);
       if (localProfiles) {
         updateStore((draft) => {
           draft.profiles = localProfiles;

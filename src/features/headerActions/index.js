@@ -18,7 +18,6 @@ export const HeaderActions = () => {
   const handleAddProfile = async () => {
     try {
       const newProfile = await addToProfile();
-      console.log('newProfile', newProfile);
       toast({
         title: `Success`,
         description: `<${newProfile.title.slice(
@@ -31,7 +30,6 @@ export const HeaderActions = () => {
         position: 'bottom'
       });
     } catch (err) {
-      console.log(err);
       toast({
         title: `An error occurred.`,
         description: `Unable add to your profile`,

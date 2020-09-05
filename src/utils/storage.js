@@ -14,8 +14,6 @@ export const getSyncStorage = (keys = []) => {
 // This function is a utility used to set a new value and add it to sync storage
 // Simply pass in the key you want to be used and the value
 export const setSyncStorage = (key, value) => {
-  const test = { [key]: value };
-  console.log(test);
   return new Promise((resolve) => {
     chrome.storage.sync.set({ [key]: value }, () => {
       resolve();

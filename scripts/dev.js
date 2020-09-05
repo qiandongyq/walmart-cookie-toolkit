@@ -27,21 +27,21 @@ config.plugins.push(
   new ExtensionReloader({
     reloadPage: true,
     entries: {
-      extensionPage: 'index',
-    },
+      extensionPage: 'index'
+    }
   })
 );
 config.plugins.push(
   new CopyPlugin({
-    patterns: [{ from: './manifest.json' }, { from: './background.js' }],
+    patterns: [{ from: './manifest.json' }, { from: './background.js' }]
   })
 );
 config.plugins.push(
   new CleanWebpackPlugin({
     cleanAfterEveryBuildPatterns: [
       '!static/js/*.chunk.js',
-      '!static/js/*.chunk.js.map',
-    ],
+      '!static/js/*.chunk.js.map'
+    ]
   })
 );
 
@@ -60,7 +60,7 @@ webpackCompiler.watch({}, function (err, stats) {
   if (!err) {
     fs.copySync(paths.appPublic, paths.appBuild, {
       dereference: true,
-      filter: (file) => file !== paths.appHtml, // This will break things if replaced on compile
+      filter: (file) => file !== paths.appHtml // This will break things if replaced on compile
     });
     console.clear();
     console.log(boxen('Walmart cookie toolkit', { padding: 1 }));
@@ -79,7 +79,7 @@ webpackCompiler.watch({}, function (err, stats) {
   const statsData = stats.toJson({
     all: false,
     warnings: true,
-    errors: true,
+    errors: true
   });
 
   if (statsData.warnings.length) {

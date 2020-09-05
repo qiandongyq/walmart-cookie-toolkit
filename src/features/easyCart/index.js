@@ -2,27 +2,26 @@ import React from 'react';
 import {
   Stack,
   Box,
-  InputGroup,
-  InputLeftAddon,
-  Input,
   Button,
   Radio,
   RadioGroup,
   Heading,
   useToast
 } from '@chakra-ui/core';
-
 import { useForm } from 'react-hook-form';
 import * as cartHelper from '../../helpers/cartHelper';
-import { EasyCartNumerInput } from '../../components';
+import { EasyCartNumerInput, GDSSearch } from '../../components';
 
 export const EasyCart = () => {
   const { register, handleSubmit, formState, reset } = useForm();
   const [env, setEnv] = React.useState('QA');
+  const [searchedItem, setSearchedItem] = React.useState({});
   const toast = useToast();
+  const handleEnvChange = (e) => setEnv(e.target.value);
+  const handleOnSearchSelect = (item) => setSearchedItem(item);
 
   const onSubmit = async (values) => {
-    const items = cartHelper.getItems(values);
+    const items = cartHelper.getItems(values, searchedItem);
     if (items.length !== 0) {
       try {
         await cartHelper.addItemsToCart(items, env);
@@ -34,6 +33,7 @@ export const EasyCart = () => {
           isClosable: true,
           position: 'top'
         });
+        setSearchedItem({});
       } catch (e) {
         toast({
           title: `An error occurred.`,
@@ -58,7 +58,6 @@ export const EasyCart = () => {
   };
 
   const { isSubmitting } = formState;
-  const handleEnvChange = (e) => setEnv(e.target.value);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -78,17 +77,7 @@ export const EasyCart = () => {
           </Radio>
         </RadioGroup>
       </Stack>
-      <Stack mt={5}>
-        <InputGroup>
-          <InputLeftAddon>SKU ID</InputLeftAddon>
-          <Input
-            type="text"
-            placeholder="61499392212"
-            name="skuId"
-            ref={register}
-          />
-        </InputGroup>
-      </Stack>
+      <GDSSearch onSelect={handleOnSearchSelect} />
       <Box spacing={4} mt={5}>
         <Heading as="h3" size="sm" color="teal.200">
           GM

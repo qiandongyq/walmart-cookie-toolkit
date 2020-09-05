@@ -5,7 +5,8 @@ import goldenData from '../data/goldenData';
 const QA_API_BASE_URL = 'https://www-qa2.walmart.ca/api/cart-page';
 const STG_API_BASE_URL = 'https://www-qa3.walmart.ca/api/cart-page';
 
-export const getItems = (values) => {
+export const getItems = (values, searchedItem = {}) => {
+  let itemFromSearch = [];
   let skuItems = [];
   let gmItems = [];
   let gm3pItems = [];
@@ -14,8 +15,13 @@ export const getItems = (values) => {
   let gmLsItems = [];
   let goItems = [];
 
-  //Sku id
+  // Search item
+  if (Object.keys(searchedItem).length !== 0) {
+    itemFromSearch.push(searchedItem);
+  }
+
   if (values.skuId) {
+    //Sku id
     skuItems = goldenData.filter((item) => item.SKU === Number(values.skuId));
   }
 
@@ -94,6 +100,7 @@ export const getItems = (values) => {
   }
 
   return [
+    ...itemFromSearch,
     ...skuItems,
     ...gmItems,
     ...gm3pItems,
@@ -102,8 +109,8 @@ export const getItems = (values) => {
     ...gmOsItems,
     ...goItems
   ].map((item) => ({
-    offerId: item.OFFERID.toString(),
-    skuId: item.SKU.toString(),
+    offerId: item.OFFERID,
+    skuId: item.SKU,
     quantity: 1,
     action: 'ADD'
   }));
