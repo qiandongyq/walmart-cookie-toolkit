@@ -3,7 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 const archive = archiver('zip');
-const output = fs.createWriteStream(path.join(__dirname, '../extension.zip'));
+const output = fs.createWriteStream(
+  path.join(__dirname, '../walmart-dev-toolkit.zip')
+);
 
 const zipContents = async () => {
   return new Promise((resolve, reject) => {
@@ -14,7 +16,7 @@ const zipContents = async () => {
 
     output.on('close', () => {
       console.log(
-        'Done! Your file `extension.zip` is ready to be uploaded to the web store.'
+        'Done! Your file `walmart-dev-toolkit..zip` is ready to be uploaded to the web store.'
       );
       resolve();
     });
