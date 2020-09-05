@@ -19,7 +19,7 @@ export const EasyCartNumerInput = ({ tl, fn, fc, n, r, ...props }) => {
         </Tooltip>
       </InputLeftAddon>
 
-      <NumberInput defaultValue={0} min={0} max={10}>
+      <NumberInput defaultValue={0} min={0}>
         <NumberInputField name={n} ref={r} />
         <NumberInputStepper>
           <NumberIncrementStepper />

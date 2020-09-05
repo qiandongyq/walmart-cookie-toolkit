@@ -11,12 +11,22 @@ import {
 import { useForm } from 'react-hook-form';
 import * as cartHelper from '../../helpers/cartHelper';
 import { EasyCartNumerInput, GDSSearch } from '../../components';
+import { useProfileStore } from '../../store';
 
 export const EasyCart = () => {
+  const { defaultProfile } = useProfileStore();
   const { register, handleSubmit, formState, reset } = useForm();
   const [env, setEnv] = React.useState('QA');
   const [searchedItem, setSearchedItem] = React.useState({});
   const toast = useToast();
+
+  React.useEffect(() => {
+    if (defaultProfile.url) {
+      const env = defaultProfile.url.includes('qa2') ? 'QA' : 'STG';
+      setEnv(env);
+    }
+  }, [defaultProfile]);
+
   const handleEnvChange = (e) => setEnv(e.target.value);
   const handleOnSearchSelect = (item) => setSearchedItem(item);
 
@@ -65,7 +75,7 @@ export const EasyCart = () => {
         <RadioGroup
           isInline
           spacing={5}
-          defaultValue="QA"
+          defaultValue={env}
           onChange={handleEnvChange}
           value={env}
         >

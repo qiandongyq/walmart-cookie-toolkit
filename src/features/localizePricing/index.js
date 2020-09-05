@@ -6,8 +6,11 @@ export const LocalizePricing = () => {
   const [localStoreCookie, setLocalStoreCookie] = React.useState({});
 
   React.useEffect(() => {
-    const localStoreInfo = lpHelper.decodeLocalStoreInfoCookie();
-    setLocalStoreCookie(localStoreInfo);
+    const getLocalStoreInfo = async () => {
+      const localStoreInfo = await lpHelper.decodeLocalStoreInfoCookie();
+      setLocalStoreCookie(localStoreInfo);
+    };
+    getLocalStoreInfo();
   }, []);
 
   return Object.keys(localStoreCookie).length === 0 ? (

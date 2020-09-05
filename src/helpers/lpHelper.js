@@ -8,8 +8,8 @@ export const decodeLocalStoreInfoCookie = async () => {
     'localStoreInfo',
     store.id
   );
-  if (cookie) {
-    const buffer = Buffer.from(cookie, 'base64');
+  if (cookie.value) {
+    const buffer = Buffer.from(cookie.value, 'base64');
     const data = buffer.toString();
     return JSON.parse(data);
   }

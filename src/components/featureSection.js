@@ -30,7 +30,7 @@ export const FeatureSection = () => {
       </Flex>
       {show && (
         <Box my={5}>
-          <Tabs variant="enclosed-colored">
+          <Tabs isFitted variant="enclosed-colored">
             <TabList mb={1}>
               {features.map((f) => (
                 <Tab

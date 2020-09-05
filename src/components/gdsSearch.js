@@ -6,7 +6,8 @@ import {
   InputLeftAddon,
   Input,
   Icon,
-  PseudoBox
+  PseudoBox,
+  Tooltip
 } from '@chakra-ui/core';
 import * as JsSearch from 'js-search';
 import goldenData from '../data/goldenData';
@@ -52,7 +53,12 @@ export const GDSSearch = ({ onSelect }) => {
     <Stack mt={5} onClick={null}>
       <InputGroup>
         <InputLeftAddon>
-          <Icon name="search-2" size="16px" />
+          <Tooltip
+            label="Indexed by SKUID, OFFER ID, PRICE, ITEM TYPE, OFFER TYPE"
+            placement="top"
+          >
+            <Icon name="search-2" size="16px" />
+          </Tooltip>
         </InputLeftAddon>
         <Input
           type="text"
