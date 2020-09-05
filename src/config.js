@@ -1,4 +1,4 @@
-import { EasyCart, LocalizePricing } from './features';
+import { EasyCart, LocalizePricing, CCM } from './features';
 export const features = [
   {
     name: 'Easy Cart',
@@ -7,5 +7,9 @@ export const features = [
   {
     name: 'LP',
     component: LocalizePricing
+  },
+  {
+    name: 'CCM',
+    component: CCM
   }
 ];
