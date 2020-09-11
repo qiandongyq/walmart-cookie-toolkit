@@ -94,8 +94,8 @@
 - LP decode with nice format
 - Delete all cookies
 - Export cookie strings (used for quickly create a cart in Safari)
-- Export all custom profile, slots, cookies and setting to a file
-- Import all custom profile, slots, cookies and setting from a file
+- Export all custom profiles, slots, cookies and settings to a file
+- Import all custom profiles, slots, cookies and settings from a file
 
 <img width="500" src="doc/qol-features.png" alt="qol-features">
 
