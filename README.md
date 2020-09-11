@@ -22,6 +22,7 @@
 ## Table of Contents
 
 - [About the Project](#about-the-project)
+- [Demo](#demo)
 - [Core Features](#core-features)
 - [QOL Features](#qol-features)
 - [Update Extension](#update-extension)
@@ -33,6 +34,20 @@
 **Walmart dev toolkit is aimed at creating an automated way to provide a more enjoyable development environment for Walmart developers and QEs.**
 
 <img src="doc/wdt.png" alt="indexed-search">
+
+## Demo
+
+### Localhost ENV (Get a fulling working cart with slot booked in less than 10 secs)
+
+> add items + book a slot + import cookies + auto refresh
+
+  <img src="doc/auto-cart.gif" alt="auto-cart">
+
+### Localhost ENV (Get a fulling working checkout with slot booked in less than 10 secs)
+
+> add items + book a slot + import cookies + auto redirect
+
+  <img src="doc/auto-checkout.gif" alt="auto-checkout">
 
 ## Core Features
 
