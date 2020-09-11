@@ -30,7 +30,7 @@
 
 ## About The Project
 
-**Walmart dev toolkit is aimed at creating a more enjoyable development environment for Walmart developers and QEs.**
+**Walmart dev toolkit is aimed at creating an automated way to provide a more enjoyable development environment for Walmart developers and QEs.**
 
 <img src="doc/wdt.png" alt="indexed-search">
 
