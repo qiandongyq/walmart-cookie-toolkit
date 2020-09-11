@@ -1,7 +1,4 @@
 /*global chrome*/
-import { QA_BASE_URL } from './constants';
-import { getUrlFromEnv } from '../utils/url';
-
 export const getActiveTab = () => {
   return new Promise((resolve) => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {

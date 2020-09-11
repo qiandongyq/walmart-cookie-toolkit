@@ -8,7 +8,6 @@ import {
 import * as cookieHelper from '../../helpers/cookieHelper';
 import * as tabHelper from '../../helpers/tabHelper';
 import { COMMON_SETTINGS_TYPE, CHROME_STORE_ID } from '../../helpers/constants';
-import { getEnvFromUrl } from '../../utils/url';
 
 export const ImportButton = () => {
   const { defaultProfile, profiles } = useProfileStore();
