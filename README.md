@@ -46,7 +46,7 @@
 - Easy Slot
   - Add a slot from the pre-defined pickup slots (K1C1T1 and T6N0A9).
     <img src="doc/predefined-slots.png" alt="predefined-slots">
-  - Add a slot to your custom slots pool.
+  - Add a slot from your custom slots pool.
     <img src="doc/create-slot.png" alt="create-slot">
 - Easy Cookies
   - Import cookie from QA2/STG or any site in your profiles
