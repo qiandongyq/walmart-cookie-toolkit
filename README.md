@@ -25,6 +25,7 @@
 - [Demo](#demo)
 - [Core Features](#core-features)
 - [QOL Features](#qol-features)
+- [Installation](#installation)
 - [Update Extension](#update-extension)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -99,6 +100,12 @@
 <img width="500" src="doc/qol-features.png" alt="qol-features">
 
 <img width="500" src="doc/lp.png" alt="lp">
+
+## Installation
+
+Unpack the ZIP somewhere. Go to chrome://extensions/ and turn on Developer Mode. Click on "Load unpacked" and select the directory that you unpacked to.
+
+<img src="doc/installation.gif" alt="installation">
 
 ## Update Extension
 
