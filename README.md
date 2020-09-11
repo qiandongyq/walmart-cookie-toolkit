@@ -61,7 +61,7 @@
 
   <img width="500" src="doc/item-filters.png" alt="item-filters">
 
-  - Add an item within your custom items pool.
+  - Add an item use your custom items pool first then GDS.
 
   <img width="500" src="doc/custom-items.png" alt="custom-items">
 
