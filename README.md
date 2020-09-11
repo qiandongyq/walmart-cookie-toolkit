@@ -69,7 +69,8 @@
 
 ## Update Extension
 
-Install the new version of the extension will remove all your custom profiles, slots, cookies and settings. Please remember to export them to a file before you re-install the extension. After the reinstallation is done, import the file you exported and you good to go.
+Install the new version of the extension will remove all your custom profiles, slots, cookies and settings. Please remember to export them to a file before you re-install the extension. After the reinstallation is done, import the file you exported and you are good to go.
+
 <img src="doc/sync.png" alt="sync">
 
 ## Usage
