@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid } from '@chakra-ui/core';
-import { CollapseSection, FullpageHeader } from '../components';
+import { CollapseSection, FullPageHeader } from '../components';
 import {
   Profile,
   CommonSettings,
@@ -13,8 +13,8 @@ import {
 
 const FullPage = () => {
   return (
-    <Box w="100%" minH="100vh">
-      <FullpageHeader />
+    <Box w="100%" minH="100vh" mb={10}>
+      <FullPageHeader />
 
       {/* Profils */}
       <Box maxW="70%" mx="auto">
@@ -65,8 +65,6 @@ const FullPage = () => {
             <Sync />
           </CollapseSection>
         </Grid>
-
-        {/* <EasyCart /> */}
       </Box>
     </Box>
   );

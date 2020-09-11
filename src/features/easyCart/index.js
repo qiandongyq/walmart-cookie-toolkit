@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/core';
 import * as cartHelper from '../../helpers/cartHelper';
 import * as slotHelper from '../../helpers/slotHelper';
-import { EasyCartNumerInput, GDSSearch } from '../../components';
+import { EasyCartNumberInput, GDSSearch } from '../../components';
 import {
   useProfileStore,
   useSlotStore,
@@ -78,7 +78,7 @@ export const EasyCart = () => {
         await cartHelper.addItemsToCart(items, env);
         toast({
           title: `Success`,
-          description: `${items.length} added`,
+          description: `${items.length} items added`,
           status: 'success',
           duration: 3000,
           isClosable: true,
@@ -143,7 +143,7 @@ export const EasyCart = () => {
     }
 
     if (commonSettings[COMMON_SETTINGS_TYPE.RTC_ON_ADD].isEnabled) {
-      await tabHelper.redirectToCheckout(env);
+      await tabHelper.redirectToCheckout();
     }
 
     resetForm();
@@ -196,13 +196,13 @@ export const EasyCart = () => {
               borderWidth="1px"
               p={3}
             >
-              <EasyCartNumerInput
+              <EasyCartNumberInput
                 tl="GM Items Count"
                 fn="Ct"
                 value={formValues.gmCount}
                 onChange={(value) => handleFormChange(value, 'gmCount')}
               />
-              <EasyCartNumerInput
+              <EasyCartNumberInput
                 tl="Minimium Price (Apply to all GM filters)"
                 fn="$ >="
                 fc="teal.200"
@@ -212,13 +212,13 @@ export const EasyCart = () => {
             </Stack>
             <Box mt={3} borderStyle="dashed" borderWidth="1px" p={3}>
               <Stack isInline spacing={4}>
-                <EasyCartNumerInput
+                <EasyCartNumberInput
                   tl="Limites Stock"
                   fn="LS"
                   value={formValues.gmLsCount}
                   onChange={(value) => handleFormChange(value, 'gmLsCount')}
                 />
-                <EasyCartNumerInput
+                <EasyCartNumberInput
                   tl="Out of Stock"
                   fn="OS"
                   value={formValues.gmOsCount}
@@ -226,13 +226,13 @@ export const EasyCart = () => {
                 />
               </Stack>
               <Stack isInline mt={3} spacing={4}>
-                <EasyCartNumerInput
+                <EasyCartNumberInput
                   tl="3P Items"
                   fn="3P"
                   value={formValues.gm3pCount}
                   onChange={(value) => handleFormChange(value, 'gm3pCount')}
                 />
-                <EasyCartNumerInput
+                <EasyCartNumberInput
                   tl="Digital Items"
                   fn="DT"
                   n="gmDigitalCount"
@@ -257,13 +257,13 @@ export const EasyCart = () => {
             borderWidth="1px"
             p={3}
           >
-            <EasyCartNumerInput
+            <EasyCartNumberInput
               tl="Grocery Items Count"
               fn="Ct"
               value={formValues.goCount}
               onChange={(value) => handleFormChange(value, 'goCount')}
             />
-            <EasyCartNumerInput
+            <EasyCartNumberInput
               tl="Minimum Price (Apply to all GO filters)"
               fn="$ >="
               color="teal.200"

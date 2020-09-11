@@ -10,7 +10,7 @@ const getGeneralItemsInCategory = (itemCount, customItemsArray, options) => {
     lookupItems = customItemsArray
       .filter(
         (item) =>
-          (item.ITEM_TYPE === options.itemType || item.ITEM_TYPE === 'MX') &&
+          item.ITEM_TYPE === options.itemType &&
           item.OFFERTYPE === options.offerType &&
           !item.ISDIGITAL &&
           item.LIMITEDSTOCKAVAILABLE === 'NO' &&
@@ -23,7 +23,7 @@ const getGeneralItemsInCategory = (itemCount, customItemsArray, options) => {
       const remainItems = goldenData
         .filter(
           (item) =>
-            (item.ITEM_TYPE === options.itemType || item.ITEM_TYPE === 'MX') &&
+            item.ITEM_TYPE === options.itemType &&
             item.OFFERTYPE === options.offerType &&
             !item.ISDIGITAL &&
             item.LIMITEDSTOCKAVAILABLE === 'NO' &&

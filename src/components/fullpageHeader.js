@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heading, Flex, Text } from '@chakra-ui/core';
 import { VERSION } from '../config';
-export const FullpageHeader = () => {
+export const FullPageHeader = () => {
   return (
     <Flex
       align="center"

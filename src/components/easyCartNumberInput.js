@@ -10,7 +10,7 @@ import {
   Tooltip
 } from '@chakra-ui/core';
 
-export const EasyCartNumerInput = ({
+export const EasyCartNumberInput = ({
   tl,
   fn,
   fc,

@@ -28,10 +28,15 @@ export const reloadActivePage = async () => {
   });
 };
 
-export const redirectToCheckout = async (env = QA_BASE_URL) => {
-  const baseApiUrl = getUrlFromEnv(env);
-  const appUrl = `${baseApiUrl}/checkout`;
+export const redirectToCheckout = async () => {
   const tab = await getActiveTab();
+  const redirectUrl = tab.url.match(
+    /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)(:[\d?]+)?/
+  )[0];
+
+  const appUrl = tab.url.includes('checkout')
+    ? tab.url
+    : `${redirectUrl}/checkout`;
   return new Promise((resolve) => {
     chrome.tabs.update(tab.id, { url: appUrl }, () => {
       resolve();

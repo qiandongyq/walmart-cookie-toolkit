@@ -38,7 +38,7 @@ export const ImportButton = () => {
       }
 
       if (commonSettings[COMMON_SETTINGS_TYPE.RTC_ON_IMPORT].isEnabled) {
-        await tabHelper.redirectToCheckout(getEnvFromUrl(defaultProfile.url));
+        await tabHelper.redirectToCheckout();
       }
     } catch (err) {
       toast({
