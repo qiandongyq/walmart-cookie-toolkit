@@ -181,7 +181,7 @@ When the button on the popup is clicked, this function is called. It simply crea
 
 ### Preparing to Release
 
-To prepare for publish, simply run `yarn assemble` which will kick off a production-ready build step and then zip all the contents to `walmart-dev-toolkit-*.zip` in the folder root. This zip file will include all the files you need for your extension to be uploaded to the web store.
+To prepare for publish, simply run `yarn assemble` which will kick off a production-ready build step and then zip all the contents to `walmart-dev-toolkit-*.zip` in the folder root. This zip file will include all the files you need for your extension to be used in chromium based browser.
 
 ## Need More help?
 
