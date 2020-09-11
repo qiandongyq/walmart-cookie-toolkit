@@ -8,12 +8,12 @@
   <h3 align="center">Walmart Dev Toolkit</h3>
   <p align="center">
     </br>
-    <a href=""><strong>Download here (1.0.0) »</strong></a>
+    <a href="https://gecgithub01.walmart.com/d0q006u/walmart-dev-toolkit/releases/download/1.0.0/walmart-dev-toolkit-1.0.0.zip"><strong>Download here (1.0.0) »</strong></a>
     <br />
     <br />
-    <a href="">Report Bug</a>
+    <a href="https://gecgithub01.walmart.com/d0q006u/walmart-dev-toolkit/issues">Report Bug</a>
     ·
-    <a href="">Request Feature</a>
+    <a href="https://gecgithub01.walmart.com/d0q006u/walmart-dev-toolkit/issues">Request Feature</a>
   </p>
 </p>
 
@@ -63,8 +63,9 @@
 - Delete all cookies
 - Export cookie strings (used for quickly create a cart in Safari)
 - Export all custom profile, slots, cookies and setting to a file
-- Import allcustom profile, slots, cookies and setting from a file
+- Import all custom profile, slots, cookies and setting from a file
   <img src="doc/qol-features.png" alt="qol-features">
+  <img src="doc/lp.png" alt="lp">
 
 ## Update Extension
 
