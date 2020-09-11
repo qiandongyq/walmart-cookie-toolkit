@@ -66,7 +66,9 @@ export const CustomCookiesPoolProvider = ({ children }) => {
 export const useCustomCookiesStore = () => {
   const context = React.useContext(CustomCookiesPoolContext);
   if (context === undefined) {
-    throw new Error('useCustomCookiesStore must be used within a SlotProvider');
+    throw new Error(
+      'useCustomCookiesStore must be used within a CustomCookiesPoolContext'
+    );
   }
   return context;
 };

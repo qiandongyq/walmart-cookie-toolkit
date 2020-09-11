@@ -62,7 +62,7 @@ export const useCommonSettingsStore = () => {
   const context = React.useContext(CommonSettingsContext);
   if (context === undefined) {
     throw new Error(
-      'useCommonSettingsStore must be used within a SlotProvider'
+      'useCommonSettingsStore must be used within a CommonSettingsProvider'
     );
   }
   return context;

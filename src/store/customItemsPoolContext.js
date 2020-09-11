@@ -66,7 +66,9 @@ export const CustomItemsPoolProvider = ({ children }) => {
 export const useCustomItemsStore = () => {
   const context = React.useContext(CustomItemsPoolContext);
   if (context === undefined) {
-    throw new Error('useCustomItemsStore must be used within a SlotProvider');
+    throw new Error(
+      'useCustomItemsStore must be used within a CustomItemsPoolProvider'
+    );
   }
   return context;
 };
