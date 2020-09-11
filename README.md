@@ -103,7 +103,7 @@
 
 ## Installation
 
-Unpack the ZIP somewhere. Go to chrome://extensions/ and turn on Developer Mode. Click on "Load unpacked" and select the directory that you unpacked to.
+Unpack the ZIP somewhere. Go to chrome://extensions/ and turn on Developer Mode. Click on "Load unpacked" and select the directory that you unpacked to. Pin it to your extension bar if it required.
 
 <img src="doc/installation.gif" alt="installation">
 
