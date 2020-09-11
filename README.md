@@ -38,21 +38,21 @@
 
 - Easy Cart
   - Add an item using indexed search by offer type, item type, skuId, offerId and price.
-    <img src="doc/indexed-search.png" alt="indexed-search">
+    <img width="500" src="doc/indexed-search.png" alt="indexed-search">
   - Add an item using the quick custom number inputs which can be filtered by price, out of stock, limited stock, 3P and digital items.
-    <img src="doc/item-filters.png" alt="item-filters">
+    <img width="500" src="doc/item-filters.png" alt="item-filters">
   - Add an item within your custom items pool.
-    <img src="doc/custom-items.png" alt="custom-items">
+    <img width="500" src="doc/custom-items.png" alt="custom-items">
 - Easy Slot
   - Add a slot from the pre-defined pickup slots (K1C1T1 and T6N0A9).
-    <img src="doc/predefined-slots.png" alt="predefined-slots">
+    <img width="500" src="doc/predefined-slots.png" alt="predefined-slots">
   - Add a slot from your custom slots pool.
-    <img src="doc/create-slot.png" alt="create-slot">
+    <img width="500" src="doc/create-slot.png" alt="create-slot">
 - Easy Cookies
   - Import cookie from QA2/STG or any site in your profiles
-    <img src="doc/import.png" alt="import">
+    <img width="500" src="doc/import.png" alt="import">
   - Appending your custom cookies alongside with import cookies
-    <img src="doc/custom-cookie.png" alt="custom-cookies">
+    <img width="500" src="doc/custom-cookie.png" alt="custom-cookies">
 
 ## QOL Features
 
@@ -64,14 +64,14 @@
 - Export cookie strings (used for quickly create a cart in Safari)
 - Export all custom profile, slots, cookies and setting to a file
 - Import all custom profile, slots, cookies and setting from a file
-  <img src="doc/qol-features.png" alt="qol-features">
-  <img src="doc/lp.png" alt="lp">
+  <img width="500" src="doc/qol-features.png" alt="qol-features">
+  <img width="500" src="doc/lp.png" alt="lp">
 
 ## Update Extension
 
 Install the new version of the extension will remove all your custom profiles, slots, cookies and settings. Please remember to export them to a file before you re-install the extension. After the reinstallation is done, import the file you exported and you are good to go.
 
-<img src="doc/sync.png" alt="sync">
+<img width="500" src="doc/sync.png" alt="sync">
 
 ## Usage
 
