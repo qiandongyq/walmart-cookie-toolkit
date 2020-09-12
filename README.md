@@ -38,13 +38,13 @@
 
 ## Demo
 
-### Localhost ENV (Get a fulling working cart with slot booked in less than 10 secs)
+### Localhost env (Get a fully working cart with slot booked in less than 10 secs)
 
 > add items + book a slot + import cookies + auto refresh
 
   <img src="doc/auto-cart.gif" alt="auto-cart">
 
-### Localhost ENV (Get a fulling working checkout with slot booked in less than 10 secs)
+### Localhost ENV (Get a fully working checkout with slot booked in less than 10 secs)
 
 > add items + book a slot + import cookies + auto redirect
 
